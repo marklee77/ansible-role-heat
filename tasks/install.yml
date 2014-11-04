@@ -18,9 +18,11 @@
     update_cache: yes 
     cache_valid_time: 600
   with_items:
-    - python-keystoneclient
+    - python-heatclient
     - python-mysqldb
-    - keystone
+    - heat-api
+    - heat-api-cfn
+    - heat-engine
 
 - name: ensure keystone is started and enabled
   service: 
